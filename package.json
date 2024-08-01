@@ -1,0 +1,60 @@
+{
+  "name": "mi-components",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build:js": "webpack --config ./webpack.component.js",
+    "build:css": "gulp build --gulpfile gulpfile.js",
+    "dist": "npm run build:js && npm run build:css",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "vue": "^2.7.16"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "4.4.4",
+    "@vue/cli-plugin-eslint": "4.4.4",
+    "@vue/cli-service": "4.4.4",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^5.0.0",
+    "sass": "^1.77.8",
+    "sass-loader": "^5.0.1",
+    "vue-loader": "^15.11.1",
+    "vue-template-compiler": "^2.6.14",
+    "vuepress": "^1.8.3",
+    "webpack-cli": "^4.10.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "_id": "mi-components@0.1.0",
+  "readme": "ERROR: No README data found!"
+}
