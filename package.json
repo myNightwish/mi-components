@@ -2,6 +2,18 @@
   "name": "mi-components",
   "version": "0.1.0",
   "private": true,
+  "description": "Mi-components is a UI-components",
+  "author": "myNightwish",
+  "license": "MIT",
+  "main": "dist/mi-components.umd.js",
+  "files": [
+    "dist",
+    "components"
+  ],
+  "keywords": [
+    "ui-components",
+    "vue"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build:js": "webpack --config ./webpack.component.js",

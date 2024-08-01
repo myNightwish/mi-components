@@ -1,24 +1,25 @@
-# mi-components
+# mi-components 组件库
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### 快捷开始
 
-### Compiles and minifies for production
-```
-npm run build
+
+#### 1、安装
+
+```bash
+npm install mi-components
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+### 2、引用
+> 在 main.js 中引用组件库
+```js
+// 全部引用
+import MiComponents from 'mi-components'
+import 'mi-components/dist/css/index.css'
+Vue.use(MiComponents)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+// 按需引用
+import { miCard } from 'mi-components'
+import 'mi-components/dist/css/button.css'
+Vue.use(miCard)
+```
