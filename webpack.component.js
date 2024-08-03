@@ -14,15 +14,12 @@ async function makeList(dirPath) {
 } 
 
 makeList('components/lib');
-console.log("list---", list)
 
 module.exports = {
   entry: list,
   mode: 'development',
   output: {
-    // card.umd.js
     filename: '[name].umd.js',
-    // filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
     library: 'miui',
     libraryTarget: 'umd'
