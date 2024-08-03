@@ -15,6 +15,8 @@ const install = function(Vue) {
   });
 };
 const API = {
-  install
-}
+  install,
+  ...components
+};
+
 export default API;

@@ -1,13 +1,9 @@
 import Vue from 'vue';
 import App from './App.vue';
-import '../components/css/demo.scss';
-import '../components/css/card.scss';
 
-import testDemo from '../components/lib/demo/index.js';
-import card from '../components/lib/card/index.js';
-
-Vue.use(testDemo);
-Vue.use(card);
+import MiComponents from 'mi-components-night';
+import 'mi-components-night/dist/css/index.css';
+Vue.use(MiComponents);
 
 Vue.config.productionTip = false
 

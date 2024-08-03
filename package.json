@@ -1,11 +1,10 @@
 {
   "name": "mi-components",
   "version": "0.1.0",
-  "private": true,
-  "description": "Mi-components is a UI-components",
+  "description": "Mi-components-night is a UI-components",
   "author": "myNightwish",
   "license": "MIT",
-  "main": "dist/mi-components.umd.js",
+  "main": "dist/index.umd.js",
   "files": [
     "dist",
     "components"
@@ -18,15 +17,17 @@
     "serve": "vue-cli-service serve",
     "build:js": "webpack --config ./webpack.component.js",
     "build:css": "gulp build --gulpfile gulpfile.js",
-    "dist": "npm run build:js && npm run build:css",
+    "dist": "npm run clean && npm run build:js && npm run build:css",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash deploy.sh",
+    "clean": "rimraf dist && rimraf dist/*"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "mi-components-night": "^0.1.0",
     "vue": "^2.7.16"
   },
   "devDependencies": {

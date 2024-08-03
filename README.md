@@ -14,8 +14,8 @@ npm install mi-components
 > 在 main.js 中引用组件库
 ```js
 // 全部引用
-import MiComponents from 'mi-components'
-import 'mi-components/dist/css/index.css'
+import MiComponents from 'mi-components-night';
+import 'mi-components-night/dist/css/index.css';
 Vue.use(MiComponents)
 
 // 按需引用
@@ -23,3 +23,6 @@ import { miCard } from 'mi-components'
 import 'mi-components/dist/css/button.css'
 Vue.use(miCard)
 ```
+
+### 3、注意
+> node 版本 12.13.0
